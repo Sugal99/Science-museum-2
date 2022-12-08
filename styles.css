@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome_page {
+    background: url(/images/Hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 31vh;
+    background-size: cover;
+    border: 1px solid #000000;
+    margin-top: -205px;
+    
+    
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    line-height: 531%;
+    text-shadow: 0px 4px 4px rgb(0 0 0), 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 7vw;
+    margin-left: -4%;
+}
+
+.banner-info{
+    font-size: 3vw;
+    color: white;
+    margin-top: -4rem;
+    white-space: pre-line;
+    text-align: inherit;
+    padding-left: 23%;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 75%);
+}
+
+.welcome_page_button {
+    font-size: 8px;
+    background-color: #6979F8;
+    border: none;
+    color: white;
+    padding: 4px;
+    font-size: 8px;
+    margin: 4px 2px;
+    margin-left: 23%;
+    border-radius: 3px;
+    display: block;
+}
+
+.explore_container {
+    display: grid;
+    grid-template-areas:
+    "space1 space2"
+    "space3 space4"
+    "space5 space6";
+}
+
+.explore_forkids {
+    grid-area: space1;
+    width: 70%;
+    align-self: flex-start;
+    letter-spacing: var(--spacing);
+
+}
+
+.explore_forkids_img {
+    grid-area: space2;
+
+}
+
+.explore_forteacher_img{
+    grid-area: space3;
+}
+
+.explore_forteacher {
+    grid-area: space4;
+    grid-column: 2;
+}
+
+.for_teachers_img {
+    width: 108%;
+    height: 99%;
+}
+
+
+h3 {
+    text-align: center;
+    margin-top: 1%;
+}
+h4 {
+    margin: -20% 0% 0% 0%;
+}
+
+.for_kids {
+    color: black;
+    font-size: 3vw;
+    white-space: pre-line;
+    margin-top: -7px;
+    width: 190%;
+    
+    
+}
+
+.for_kids_img {
+    width: 147px;
+    height: 42vw;
+}
+
+
+h5 {
+    font-size: 16px;
+
+}
+
+.for_teacher {
+    font-size: 3vw;
+    white-space: pre-line;
+    margin-top: -21%;
+    line-height: 101%;
+}
+.visit {
+    margin-top: -33%;
+    grid-area: space5;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+.visit-info {
+    margin: -10vw 0vw 0vw 0vw;
+    font-size: 3vw;
+    white-space: pre-line;
+    font-weight: 600;
+}
+
+.explore_visit_img {
+    grid-area: space6;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 43%;
+    border-radius: 130px;
+}
+    
+
+.for_visit_img {
+    width: 51vw;
+    border-radius: 12%;
+}
+
+/* Hamburger menu inspiration from: 
+https://alvarotrigo.com/blog/hamburger-menu-css/ and 
+https://codepen.io/alvarotrigo/pen/yLzaPVJ */
+
+ #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+
+  .menu__btn {
+    position: absolute;
+    top: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    margin-left: 81%;
+    right: 25px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: relative;
+    top: -18px;
+    left: -180%;
+    width: 207px;
+    height: 149px;
+    margin: 0;
+    padding: 71px 0;
+    list-style: none;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+    /* transition-duration: .25s; */
+    margin-left: -1%;
+    padding-top: 1%;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  /* transition-duration: .0s; */
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.footer {
+    background-color: #6979F8;
+    color: white;
+    height: 44px;
+    padding-top: 7%;
+    font-size: 12px;
+    white-space: pre-wrap;
+}
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .banner-info {
+        margin-top: -20%; 
+    }
+}
+    @media screen and (min-width: 425px) {
+        h5 {
+            padding-bottom: 4%;
+        }
+        
+        .menu__box {
+            
+        }
+
+    }
+
+
+@media screen and (min-width: 375px) {
+    .footer {
+        padding-left: 4%;
+        font-size: 13px;
+    }
+
+    .for_kids_img{
+        width: 191px;
+        height: 42vw;
+    }
+
+    .menu__box {
+        left: -206%;
+    }
+}
+
