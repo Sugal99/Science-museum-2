@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title>Test</title>
+    <meta name="description" content="This is a Online Science Museum website where both children parents and teachers can explore 
+    the world of science and exhibition together!">
+    <meta name="keywords" content="Science, Museum, Online science museum, HTML, CSS">
+    <meta name="author" content="Sugal Aden">
+    <link href="home.css" rel="stylesheet">
+    <link href="hover.css" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
     <header>
         <section class="logo">
-            <img src="/images/Logo.png" class="logo"  alt="Logo"> 
+            <a href="/home.html">
+            <img src="/images/Logo.png" class="logo"  alt="This is the Logo"> 
+        </a>
         </section>
 
         <nav>
@@ -21,12 +28,21 @@
                 </label>
             
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Home</a></li>
-                  <li><a class="menu__item" href="#">Exhibitons</a></li>
-                  <li><a class="menu__item" href="#">Tour</a></li>
-                  <li><a class="menu__item" href="#">Contact Us</a></li>
-                  <li><a class="menu__item" href="#">About</a></li>
+                  <li><a class="menu__item" href="/home.html">Home</a></li>
+                  <li><a class="menu__item" href="/exhibitions.html">Exhibitons</a></li>
+                  <li><a class="menu__item" href="/tours.html">Tour</a></li>
+                  <li><a class="menu__item" href="/contact.html">Contact Us</a></li>
+                  <li><a class="menu__item" href="/about.html">About</a></li>
                 </ul>
+            </section>
+
+            <ul class="navbar">
+                <li><a href="/home.html">Home  </a></li>
+                <li><a href="/exhibitions.html">Exhibitons   </a></li>
+                <li><a href="/tours.html">Tours  </a></li>
+                <li><a href="/about.html">About  </a></li>
+                <li><a href="/contact.html">Contact Us  </a></li>
+            </ul>
             </nav>
         </section>
 </header>    
@@ -38,8 +54,9 @@
             <p class="banner-info"> Come join us at the Community Science Museum 
                 where we’re committed to making science accessible
                 to all. </p>
-            <button type="submit" class="welcome_page_button">Take a look!</button>
-              
+                <a href="/exhibitions.html">
+            <button type="submit" class="welcome_page_button hvr-bob ">Take a look!</button>
+        </a>
     </section>
 </section>
 
@@ -70,7 +87,7 @@
         </section>
 
 <section class="explore_forkids_img">
-    <img src="/images/Explore_image_1.png" class="for_kids_img" alt="for kids image"> 
+    <img src="/images/Explore_image_1.png" class="for_kids_img hvr-float-shadow" alt="for kids image"> 
 </section>
 
 <section class="explore_forteacher">
@@ -92,7 +109,7 @@
     </section>
 
     <section class="explore_forteacher_img">
-        <img src="/images/Explore_image_2 18-08-59-038.png" class="for_teachers_img" alt="for teachers image"> 
+        <img src="/images/Explore_image_2%2018-08-59-038.png" class="for_teachers_img hvr-float-shadow" alt="for teachers image"> 
     </section>
 
 
@@ -128,42 +145,16 @@
     </section>
     
     <section class="explore_visit_img">
-        <img src="/images//Visit image.png" class="for_visit_img" alt="for teachers image"> 
+        <img src="/images/Visit%20image.png" class="for_visit_img hvr-float-shadow" alt="for teachers image"> 
     </section>
-
-
 </section>
-
-
-    
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-</main>
-
-
+    </main>
 
 <footer>
     <p class="footer">
-        About Us    Contact Us    Privacy policy    Terms of use
+        <a href="/about.html">About Us</a>    <a href="/contact.html">Contact Us</a>   Privacy policy    Terms of use
     </p>
+
 </footer>
 </body>
 </html>

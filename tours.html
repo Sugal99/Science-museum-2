@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles3.css" rel="stylesheet">
-    <title>Document</title>
+    <meta name="description" content="This is a Online Science Museum website where both children parents and teachers can explore 
+    the world of science and exhibition together!">
+    <meta name="keywords" content="Science, Museum, Online science museum, HTML, CSS">
+    <meta name="author" content="Sugal Aden">
+    <link href="tours.css" rel="stylesheet">
+    <link href="hover.css" rel="stylesheet">
+    <title>Tours</title>
 </head>
 <body>
     <header>
         <section class="logo">
-            <img src="/images/Logo.png" class="logo"  alt="Logo"> 
+            <a href="/home.html">
+            <img src="/images/Logo.png" class="logo"  alt="This is the Logo">
+        </a> 
         </section>
      
         <nav>
@@ -21,16 +28,23 @@
                 </label>
             
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Home</a></li>
-                  <li><a class="menu__item" href="#">Exhibitons</a></li>
-                  <li><a class="menu__item" href="#">Tour</a></li>
-                  <li><a class="menu__item" href="#">Contact Us</a></li>
-                  <li><a class="menu__item" href="#">About</a></li>
+                  <li><a class="menu__item" href="/home.html">Home</a></li>
+                  <li><a class="menu__item" href="/exhibitions.html">Exhibitons</a></li>
+                  <li><a class="menu__item" href="tours.html">Tour</a></li>
+                  <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+                  <li><a class="menu__item" href="about.html">About</a></li>
+                </ul>
+                </section>
+
+                <ul class="navbar">
+                    <li><a href="/home.html">Home  </a></li>
+                    <li><a href="/exhibitions.html">Exhibitons   </a></li>
+                    <li><a href="/tours.html">Tours  </a></li>
+                    <li><a href="/about.html">About  </a></li>
+                    <li><a href="/contact.html">Contact Us  </a></li>
                 </ul>
             </nav>
-        </section>
 </header>
-
 <main>
 
 <section class="tour_header">
@@ -48,7 +62,7 @@
 <section class="tour_container">
     <section class="tour_robotics_and_ai">
         <h4 class="robotics_ai_title">Robotics and Ai</h4>
-        <img src="/images/Robotics and AI.png" class="robotics_ai_img" alt="robotics and ai image">
+        <img src="/images/Robotics%20and%20AI.png" class="robotics_ai_img hvr-float-shadow" alt="robotics and ai image">
         <p class="robotics_and_ai_info">
             The information revolution is 
             here and robotics and artificial 
@@ -65,7 +79,7 @@
 
     <section class="tour_ecology">
         <h4 class="ecology">Ecology</h4>
-        <img src="/images/Ecology.png" class="ecology_img" alt="ecology image">
+        <img src="/images/Ecology.png" class="ecology_img hvr-float-shadow" alt="ecology image">
         <p class="ecology_info">
             As we learn more and more of 
             the impact humans are having 
@@ -90,7 +104,7 @@
 
     <section class="tour_science_lab">
         <h4 class="science_lab">Science Lab</h4>
-        <img src="/images/Science Lab.png" class="science_lab_img" alt="science lab image">
+        <img src="/images/Science%20Lab.png" class="science_lab_img hvr-float-shadow" alt="science lab image">
         <p class="science_lab_info">
             Be apart of our science team for
             a day and discover how the laws
@@ -105,7 +119,6 @@
             work.
         </p>
     </section>
-
 </section>
 
 
@@ -130,36 +143,41 @@
     <label for="people">PEOPLE</label>
     <select class="dropdown_menu">
         <option selected disabled hidden>Amount of people</option>
-        <option>1-5</option>
-        <option>5-10</option>
-        <option>10-20</option>
-        <option>20-30</option>
-        <option>30-40</option>
-        <option>40-50</option>
+        <option>1-5   (70kr)</option>
+        <option>5-10  (70kr)</option>
+        <option>10-20 (70kr)</option>
+        <option>20-30 (70kr)</option>
+        <option>30-40 (70kr)</option>
+        <option>40-50 (70kr)</option>
     </select>
 
     <p class="date_time_info">
         we can discuss date 
         and time later on.
     </p>
-
-    <button type="submit" class="welcome_page_button">Submit</button>
 </form>
+
+<section class="submit_btn">
+    <button onclick="submit()" class="welcome_page_button hvr-grow">Submit</button>
+    </section>
 </section>
 
 <section class="tour_image_container">
-    <img src="/images/Tour image.png" class="tour_img" alt="tour image">
+    <img src="/images/Tour%20image.png" class="tour_img hvr-float-shadow" alt="tour image">
 </section>
 </main>
-</main>
-
 
 <footer>
     <p class="footer">
-        About Us    Contact Us    Privacy policy    Terms of use
+        <a href="/about.html">About Us</a>    <a href="/contact.html">Contact Us</a>    Privacy policy    Terms of use
     </p>
 </footer>
 
+<script>
+    function submit() {
+      alert("Your tour has been booked.\nThank you for booking a tour at the Science Museum!");
+    }
+    </script>
 
 
 </body>

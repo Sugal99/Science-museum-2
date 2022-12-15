@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Online Science Museum website where both children and teachers can explore 
+    the world of science and exhibition together!">
+    <meta name="keywords" content="Science, Museum, Online science museum, HTML, CSS">
+    <meta name="author" content="Sugal Aden">
+    <link href="contact.css" rel="stylesheet">
+    <link href="hover.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <a href="/home.html">
+            <img src="/images/Logo.png" class="logo"  alt="This is the Logo"> 
+        </a>
+        </section>
+     
+        <nav>
+            <section class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="/home.html">Home</a></li>
+                  <li><a class="menu__item" href="/exhibitions.html">Exhibitons</a></li>
+                  <li><a class="menu__item" href="/tours.html">Tour</a></li>
+                  <li><a class="menu__item" href="/contact.html">Contact Us</a></li>
+                  <li><a class="menu__item" href="/about.html">About</a></li>
+                </ul>
+                </section>
+
+                <ul class="navbar">
+                    <li><a href="/home.html">Home  </a></li>
+                    <li><a href="/exhibitions.html">Exhibitons  </a> </li>
+                    <li><a href="/tours.html">Tours  </a></li>
+                    <li><a href="/about.html">About  </a></li>
+                    <li><a href="/contact.html">Contact Us  </a></li>
+                </ul>
+            </nav>
+        </section>
+</header>    
+<main>
+
+    <section class="contact_header">
+        <h3>Contact us</h3>
+    </section>
+
+<section class="contact_container">
+    <img src="/images/Contact%20us.png" class="contact_img" alt="contact us image">
+    <p>There are various ways you can support the
+        museum. 
+        Donations are very welcome and are an 
+        important
+        way we keep this museum open and accessible 
+        to the whole community.
+        
+        If there is anything you´re unclear about or have
+        any questions, feel free to contact us through this 
+        form, and we´ll get back to you as soon as 
+        possible!</p>
+</section>
+
+<section class="contact_us_form">
+
+    <form>
+        <label for="fullname">FULL NAME</label>
+        <input type="text" id="fullname" name="fullname" value="">
+    
+        <label for="lastname">LAST NAME</label>
+        <input type="text" id="lastname" name="lastname" value="">
+    
+        <label for="email">EMAIL</label>
+        <input type="text" id="email" name="email" value="">
+    
+        <label for="message">MESSAGE</label>
+
+        <textarea id="message" name="message" rows="5" cols="20">
+            </textarea>
+        </form>
+
+<section class="submit_btn">
+    <button onclick="submit()" class="welcome_page_button hvr-grow">Submit</button>
+
+</section>
+</section>
+
+
+</main>
+
+
+<footer>
+    <p class="footer">
+        <a href="/about.html">About Us</a>    <a href="/contact.html">Contact Us</a>    Privacy policy    Terms of use
+    </p>
+</footer>
+
+<script>
+    function submit() {
+      alert("Your message has been received.\nWe will contact you as soon as possible!");
+    }
+    </script>
+
+
+</body>
+</html>

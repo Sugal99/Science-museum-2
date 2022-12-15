@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles2.css" rel="stylesheet">
+    <meta name="description" content="This is a Online Science Museum website where both children parents and teachers can explore 
+    the world of science and exhibition together!">
+    <meta name="keywords" content="Science, Museum, Online science museum, HTML, CSS">
+    <meta name="author" content="Sugal Aden">
+    <link href="exhibitions.css" rel="stylesheet">
+    <link href="hover.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
-   
         <section class="logo">
-            <img src="/images/Logo.png" class="logo"  alt="Logo"> 
+            <a href="/home.html">
+            <img src="/images/Logo.png" class="logo"  alt="This is the Logo"> 
+        </a>
         </section>
      
         <nav>
@@ -22,11 +28,20 @@
                 </label>
             
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Home</a></li>
-                  <li><a class="menu__item" href="#">Exhibitons</a></li>
-                  <li><a class="menu__item" href="#">Tour</a></li>
-                  <li><a class="menu__item" href="#">Contact Us</a></li>
-                  <li><a class="menu__item" href="#">About</a></li>
+                  <li><a class="menu__item" href="/home.html">Home</a></li>
+                  <li><a class="menu__item" href="/exhibitions.html">Exhibitons</a></li>
+                  <li><a class="menu__item" href="/tours.html">Tour</a></li>
+                  <li><a class="menu__item" href="contact.html">Contact Us</a></li>
+                  <li><a class="menu__item" href="about.html">About</a></li>
+                </ul>
+                </section>
+
+                <ul class="navbar">
+                    <li><a href="/home.html">Home  </a></li>
+                    <li><a href="/exhibitions.html">Exhibitons   </a></li>
+                    <li><a href="/tours.html">Tours  </a></li>
+                    <li><a href="/about.html">About  </a></li>
+                    <li><a href="/contact.html">Contact Us  </a></li>
                 </ul>
             </nav>
         </section>
@@ -40,7 +55,7 @@
    <section class="exhibitions_container">
         <section class="exhibitions_cosmology">
             <h4>Cosmology</h4>
-            <img src="/images/Cosmology.png" class="cosmology_img" alt="cosmology image">
+            <img src="/images/Cosmology.png" class="cosmology_img hvr-float-shadow " alt="cosmology image">
             <p class="cosmology_info">Explore the wonders of our cosmos. Our fantastic 
                 exhibition, ‘The Sky Above Us’, explores the night sky.
 
@@ -59,7 +74,7 @@
 
         <section class="exhibitions_evolution">
             <h4>Evolution</h4>
-            <img src="/images/Evolution.png" class="evolution_img" alt="evolution image">
+            <img src="/images/Evolution.png" class="evolution_img hvr-float-shadow " alt="evolution image">
             <p class="evolution_info">For centuries, philosophers and scientists have
                 wrestled with the question of our origins. Where do 
                 we
@@ -82,7 +97,7 @@
 
         <section class="exhibitions_biology_and_medicine">
             <h4>Biology and Medicine</h4>
-            <img src="/images/Biology and medicine.png" class="biology_img" alt="biology and medicine image">
+            <img src="/images/Biology%20and%20medicine.png" class="biology_img hvr-float-shadow " alt="biology and medicine image">
             <p class="biology_and_medicine_info">From micro-organisms to the human body, major 
                 breakthroughs in biology are offering us unique
                 insights into the great wonders of the tiny world.
@@ -97,13 +112,12 @@
                 and the first
                 heart transplant.</p>
             </section>
+        </section>
 </main>
-
-
 
 <footer>
     <p class="footer">
-        About Us    Contact Us    Privacy policy    Terms of use
+        <a href="/about.html">About Us</a>    <a href="/contact.html">Contact Us</a>    Privacy policy    Terms of use
     </p>
 </footer>
 

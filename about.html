@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles5.css" rel="stylesheet">
-    <title>Document</title>
+    <meta name="description" content="This is a Online Science Museum website where both children parents and teachers can explore 
+    the world of science and exhibition together!">
+    <meta name="keywords" content="Science, Museum, Online science museum, HTML, CSS">
+    <meta name="author" content="Sugal Aden">
+    <link href="about.css" rel="stylesheet">
+    <link href="hover.css" rel="stylesheet">
+    <title>About</title>
 </head>
 <body>
     <header>
-   
         <section class="logo">
-            <img src="/images/Logo.png" class="logo"  alt="Logo"> 
+            <a href="/home.html">
+            <img src="/images/Logo.png" class="logo"  alt="This is the Logo">
+        </a> 
         </section>
-     
+
         <nav>
             <section class="hamburger-menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -22,11 +28,20 @@
                 </label>
             
                 <ul class="menu__box">
-                  <li><a class="menu__item" href="#">Home</a></li>
-                  <li><a class="menu__item" href="#">Exhibitons</a></li>
-                  <li><a class="menu__item" href="#">Tour</a></li>
-                  <li><a class="menu__item" href="#">Contact Us</a></li>
-                  <li><a class="menu__item" href="#">About</a></li>
+                  <li><a class="menu__item" href="/home.html">Home</a></li>
+                  <li><a class="menu__item" href="/exhibitions.html">Exhibitons</a></li>
+                  <li><a class="menu__item" href="/tours.html">Tour</a></li>
+                  <li><a class="menu__item" href="/contact.html">Contact Us</a></li>
+                  <li><a class="menu__item" href="/about.html">About</a></li>
+                </ul>
+                </section>
+
+                <ul class="navbar">
+                    <li><a href="/home.html">Home  </a></li>
+                    <li><a href="/exhibitions.html">Exhibitons   </a></li>
+                    <li><a href="/tours.html">Tours  </a></li>
+                    <li><a href="/about.html">About  </a></li>
+                    <li><a href="/contact.html">Contact Us  </a></li>
                 </ul>
             </nav>
         </section>
@@ -38,7 +53,7 @@
 </section>
 
 <section class="about_container">
-    <img src="/images/About us.webp" class="about_img" alt="about us image">
+    <img src="/images/About%20us.webp" class="about_img hvr-float-shadow" alt="about us image">
     <p>Over the course of human history, science has developed from 
         our early understanding of fire, wind,
         water, and earth to exploring everything from galaxies far away to 
@@ -61,14 +76,11 @@
         from the dinosaur exhibits – they only come to life at night when 
         everyone’s gone home).</p>
 </section>
-
 </main>
     
-
-
 <footer>
     <p class="footer">
-        About Us    Contact Us    Privacy policy    Terms of use
+        <a href="/about.html">About Us</a>    <a href="/contact.html">Contact Us</a>     Privacy policy    Terms of use
     </p>
 </footer>
 

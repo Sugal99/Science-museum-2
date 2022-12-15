@@ -1,0 +1,383 @@
+@font-face {
+  font-family: "Gothic";
+  src: url(/fonts/GothicA1-Regular.ttf);
+}
+@font-face {
+  font-family: "Gothic-2";
+  src: url(/fonts/GothicA1-Light.ttf);
+}
+
+@font-face {
+  font-family: "Gothic-3";
+  src: url(/fonts/GothicA1-SemiBold.ttf);
+}
+
+/* Transitions */
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 8vh;
+  animation: transitionIn 0.8s;
+}
+/* Hamburger menu inspiration from: 
+https://alvarotrigo.com/blog/hamburger-menu-css/ and 
+https://codepen.io/alvarotrigo/pen/yLzaPVJ */
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+
+.menu__btn {
+  position: absolute;
+  top: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 2;
+  margin-left: 81%;
+  right: 25px;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: relative;
+  top: -18px;
+  left: -205%;
+  width: 207px;
+  height: 149px;
+  margin: 0;
+  padding: 71px 0;
+  list-style: none;
+  background-color: white;
+  box-shadow: 2px 2px 6px rgb(0 0 0 / 40%);
+  /* transition-duration: .25s; */
+  margin-left: -1%;
+  padding-top: 1%;
+  z-index: 1;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+  /* transition-duration: .0s; */
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+/* Hamburger menu end */
+
+.footer {
+  background-color: #6979f8;
+  color: white;
+  height: 44px;
+  padding-top: 7%;
+  font-size: 12px;
+  white-space: pre-wrap;
+  font-family: "Gothic-2";
+  margin-left: -3%;
+  animation: transitionIn 0.8s;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.exhibitions_header {
+  line-height: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -9%;
+  font-size: 6vw;
+  font-family: "Gothic";
+  animation: transitionIn 0.8s;
+}
+
+.exhibitions_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4%;
+  animation: transitionIn 0.8s;
+}
+
+.exhibitions_cosmology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cosmology_img {
+  width: 36%;
+  border-radius: 17px;
+}
+h4 {
+  line-height: 1%;
+  font-size: 5vw;
+  font-family: "Gothic-3";
+}
+.cosmology_info {
+  white-space: pre-line;
+  font-size: 3vw;
+  padding-left: 10%;
+  font-family: "Gothic-2";
+}
+
+.exhibitions_evolution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.evolution_info {
+  white-space: pre-line;
+  font-size: 3vw;
+  padding-left: 6%;
+  font-family: "Gothic-2";
+}
+
+.biology_img {
+  width: 36%;
+  border-radius: 17px;
+}
+
+.exhibitions_biology_and_medicine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.biology_and_medicine_info {
+  white-space: pre-line;
+  font-size: 3vw;
+  padding-left: 8%;
+  font-family: "Gothic-2";
+}
+
+.footer {
+  background-color: #6979f8;
+  color: white;
+  height: auto;
+  padding-top: 7%;
+  font-size: 3.9vw;
+  white-space: pre-wrap;
+}
+
+.evolution_img {
+  width: 36%;
+  border-radius: 17px;
+}
+
+.navbar {
+  display: none;
+}
+
+/* Mobile View and Tablet view: (Responsive on: 320px, 375px, 425px, 768px). */
+
+@media screen and (min-width: 425px) {
+  .menu__box {
+    left: -376%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .exhibitions_header {
+    line-height: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2%;
+    font-size: 6vw;
+    font-size: 3vw;
+  }
+
+  .exhibitions_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4%;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .exhibitions_cosmology {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cosmology_info {
+    white-space: pre-line;
+    font-size: 1.4vw;
+    padding-left: 7%;
+  }
+
+  h4 {
+    line-height: 1%;
+    font-size: 2.3vw;
+    margin-top: 1%;
+  }
+
+  h3 {
+    margin-top: 1%;
+    margin-left: -6%;
+  }
+
+  .evolution_info {
+    white-space: pre-line;
+    font-size: 1.4vw;
+    padding-left: 10%;
+  }
+
+  .biology_and_medicine_info {
+    white-space: pre-line;
+    font-size: 1.4vw;
+    padding-left: 13%;
+  }
+
+  .biology_img {
+    width: 69%;
+    border-radius: 17px;
+  }
+
+  .evolution_img {
+    width: 69%;
+    border-radius: 17px;
+  }
+
+  .cosmology_img {
+    width: 89%;
+    border-radius: 17px;
+  }
+
+  .exhibitions_evolution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -6%;
+  }
+
+  .exhibitions_biology_and_medicine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -12%;
+  }
+
+  .navbar {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    white-space: pre-wrap;
+  }
+  a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
+
+  a:hover {
+    color: rgb(110, 110, 242);
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .footer {
+    background-color: #6979f8;
+    color: white;
+    height: auto;
+    padding-top: 7%;
+    font-size: 2vw;
+    white-space: pre-wrap;
+    padding-left: 22%;
+  }
+}
+
+/* Laptop and Desktop View (1024px, 1440px) */
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    background-color: #6979f8;
+    color: white;
+    height: auto;
+    padding-top: 7%;
+    font-size: 2vw;
+    white-space: pre-wrap;
+    padding-left: 22%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    background-color: #6979f8;
+    color: white;
+    height: auto;
+    padding-top: 7%;
+    font-size: 2vw;
+    white-space: pre-wrap;
+    padding-left: 22%;
+  }
+}
