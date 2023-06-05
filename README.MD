@@ -1,39 +1,53 @@
-# Semester Project 1 Brief
+# Science Museum
 
-# Brief
+![image](https://github.com/Sugal99/Science-museum-2/blob/master/images/Logo.png?raw=true)
 
-An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (7-15) and families with young children. The museum wants a website that is informative and appealing, that will attract both middle school pupils and their parents. The site should appeal to youngsters without pandering; it should take for granted that the audience is inquisitive and intelligent. The website should be informative and engaging, but should encourage viewers to visit the museum itself. The website should be responsive and be easy to use on a variety of devices.
+An interactive science museum website where primary and middle school children (7-15) and families with young children can browse through a informative and appealing site.
 
-You have been provided media assets in the form of text and images (see link under Resources). It is for you to decide how these will be used, in terms of presentation, hierarchy, and design.
+## Description
 
-# Project Description
+This whole website itself was a assignment where we had to make a website 
+for a community museum for a targeted audience. It contains.
 
-The project exam should reflect the student’s creative and technical knowledge and skills based on the first semester curriculum. This includes design principles, project management, communication technology, and developing with HTML/CSS.
+- a home page.
+- a exhibitions page.
+- a contact page.
+- a about page.
+- a tours page.
 
-Work Schedule: Create a detailed work schedule, complete with milestones for design, coding, testing, and report. This must be submitted with your final report.
 
-Target Audience & Design: The target audience should be carefully considered, and the proposed design should reflect this. A prototype of the website should be made using your chosen software (Adobe XD, Figma etc.)
+## Built With
 
-Final Product: A URL and zip file with the final website should be submitted. The site should be tested on a variety of devices before final delivery. The student has responsibility for setting up their own web host, or using Netlify to deploy the site. GitHub repositories should be set to private.
+The tech used in this projects are as following:
+- HTML 5
+- CSS
+- Javascript
 
-Report: Submit a report discussing the design and technical aspects of the project, as well as how guidelines for WCAG, SEO and content management were handled. A template for this report is provided under ‘Resources’.
+## Getting Started
 
-The duration of the Semester Project is 4 weeks (full-time) and 8 weeks (part-time).
+### Installing
 
-# Requirements
+This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
-The site must be have a design that appeals to the target audience.
-The site must have at least 4-6 pages.
-Compositional principles, typography, and color schemes must be considered.
-Your HTML should be semantic and neatly indented.
-The site should use external CSS style sheets which follow the DRY principle.
-The site should download quickly, and not be overly “heavy”. Images should not be over 200kb.
-The site should take WCAG principles into consideration, especially regarding hierarchy, navigation, and color usage.
-The site should be responsive, attractive, and easy to use on a variety of devices.
-The site should show consideration for content strategy and SEO (consider your use of meta tags and alt text).
-The GitHub repo for the project should be set to private. You do not need to submit this with your project.
-Submission
-A link to the live version of the site must be submitted as ‘online text’
-A link to the prototype of the site must be submitted as ‘online text’
-A zip file of the whole project should be delivered.
-A report must be included with the project delivery. Ensure the report is a PDF and follows the correct naming conventions. Please use the report template provided here.
+1. Clone the repo:   
+git clone git@github.com:Sugal99/Science-museum-2
+
+
+### Running
+
+This project contains only static files, so it will pretty much run on all devices. If you want to open the files into the browser, you need the live server plugin on vscode. This plugin can be found under the "Extension" tab on vscode. When you´ve installed it, right click on the HTML files you want top open, and select "Open with live server".
+
+## Contributing
+
+This is a school projects, so it is not open for contributions.
+
+## Contact
+
+If you want to contact me regarding this project, please use the option below:
+
+* My Discord: Sugal Aden – Aug22FT#3482
+
+
+## Acknowledgments
+
+Noroff.
