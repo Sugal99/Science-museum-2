@@ -2,7 +2,7 @@
 
 ![image](https://github.com/Sugal99/Science-museum-2/blob/master/images/Logo.png?raw=true)
 
-An interactive science museum website where primary and middle school children (7-15) and families with young children can browse through a informative and appealing site.
+An interactive science museum website where primary and middle school children and families can browse through a informative and appealing site.
 
 ## Description
 
